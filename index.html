@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Double Penne</title>
+  
+  <meta charset="utf-8"></meta>
+  <link rel="icon" href="resources/favicon.ico" />
+
+  <style>
+    #main-image {
+      max-width: 50%;
+      height: auto;
+    }
+    h1, h3, footer {
+      font-family: "Roboto", sans-serif;
+    }
+    .centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .low-margin {
+      margin-top: -2vh;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .wrapper {
+      min-height: 100%;
+      margin-bottom: -50px;
+    }
+    .footer,
+    .push {
+      height: 50px;
+    }
+    .header {
+      margin-top: 1vh;
+      font-size: 20pt;
+    }
+    footer {
+      font-size: 9pt;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="centered header">
+      <h1>Une double penne</h1>
+    </div>
+    <div class="centered low-margin">
+      <h3>C'est bien ça, non ?</h3>
+    </div>
+    <div class="centered">
+      <img id="main-image" src="resources/deux-pates.png" onclick="play()"/>
+    </div>
+  </div>
+  <div class="centered">
+    <footer><b>doublepenne.fr</b> 2021 - Concept repris après l'expiration du domaine par son auteur original, merci à lui pour ce concept !</footer>
+  </div>
+</body>
+
+<audio id="audio" src="resources/sound-effect-fouet.mp3"></audio>
+
+<script>
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+</script>
+
+</html>
